@@ -6,11 +6,11 @@ import usePagination from "./hooks/usePagination"
 
 function App() {
   const { tasks, fetchTasks } = useTask(5)
-  const { actualPage, setActualPage } = usePagination()
+  // const { actualPage, setActualPage } = usePagination()
 
   useEffect(() => {
-    fetchTasks(actualPage)
-  }, [actualPage])
+    fetchTasks(1)
+  }, [])
 
 
   return (

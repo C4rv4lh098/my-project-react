@@ -7,7 +7,7 @@ export default function usePagination(){
     const location = useLocation()
     const history = useNavigate()
 
-    const[actualPage, setActualPage] = useState(
+    const [actualPage, setActualPage] = useState(
         getActualPage() || 1
 
     )
@@ -22,9 +22,9 @@ export default function usePagination(){
     useEffect(() => {
         const queryParams = qs.parse(location.search)
 
-        history.push({
+        history.apply({
             search: qs.stringify({
-                ...queryParams, 
+                ...queryParams,
                 page: actualPage
             })
         })

@@ -1,10 +1,16 @@
 import { useState } from "react";
 
+interface Task{
+    userId: number;
+    id: number;
+    title: string;
+    completed: boolean;
+}
 
-export default function useTask(pageLimit){
-    const[tasks, setTasks] = useState([])
+export default function useTask(pageLimit: number){
+    const[tasks, setTasks] = useState<Task[]>([])
 
-    function fetchTasks(page){
+    function fetchTasks(page: number){
         const virtualPage = ((page-1) * pageLimit) <= 0
         ? 0 : ((page-1) * pageLimit)
 
