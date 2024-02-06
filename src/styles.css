@@ -1,16 +1,53 @@
-.container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-*{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #181c23;
-    color: #fffbf0;
+* {
+  font-family: "Roboto", sans-serif;
+  background-color: #181c23;
+  color: #fffbf0;
 }
 
-h1{
-    margin: 0;
+:root {
+  font-size: 62.5%;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+body #root {
+  width: 90%;
+  background-color: #fffbf0;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.content .header {
+  width: 100%;
+  background-color: #fffbf0;
+}
+.content .main {
+  width: 100%;
+}
+.content .footer {
+  width: 100%;
+  background-color: #fffbf0;
+}
+.content .line {
+  height: 2rem;
+  width: 100%;
+  background-color: #fffbf0;
+}/*# sourceMappingURL=styles.css.map */
