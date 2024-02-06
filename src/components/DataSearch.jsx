@@ -2,6 +2,7 @@
 import axios from "axios"
 import { useState, useEffect } from "react"
 import Pagination from "./Pagination"
+import './css//DataSearchStyles.css'
 
 
 export default function DataSearch() {
@@ -24,25 +25,32 @@ export default function DataSearch() {
     const currentPosts = tasks.slice(firstPostIndex, lastPostIndex);
 
     return (
-        <div>
+        <div className="dataBoard">
             <h3>Buscando Dados</h3>
-            {currentPosts.map((task) => {
-                return (
-                    <table id="tableTask" key={task.id}>
-                        <thead>
-                            <th>Cod.</th>
-                            <th>Description</th>
-                            <th>Status</th>
-                        </thead>
-                        <tbody>
-                            <td>{task.id}</td>
-                            <td>{task.title}</td>
-                            <td>{task.completed ? <span id="complet">Tarefa Completa</span> : <span id="incomplet">Tarefa Incompleta</span>}</td>
-                        </tbody>
-                    </table>
-                )
-            })}
-            <Pagination 
+            <table id="tableTask" >
+                <table>
+                    <thead>
+                        <th>Number</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                    </thead>
+                    {currentPosts.map((task) => {
+                        return (
+                            <tbody key={task.id}>
+                                <td>{task.id}</td>
+                                <td>{task.title}</td>
+                                <td>
+                                    {
+                                        task.completed ? <span id="complet">Tarefa Completa</span> :
+                                            <span id="incomplet">Tarefa Incompleta</span>
+                                    }
+                                </td>
+                            </tbody>
+                        )
+                    })}
+                </table>
+            </table>
+            <Pagination
                 totalPosts={tasks.length}
                 postsPerPage={postsPerPage}
                 setCurrentPage={setCurrentPage}

@@ -1,1 +1,30 @@
-/*# sourceMappingURL=DataSearchStyles.css.map */
+.dataBoard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dataBoard table {
+  border: 0.1rem solid #8f8f8f;
+  width: 100rem;
+  height: 5rem;
+}
+.dataBoard table th {
+  background-color: #8f8f8f;
+  color: black;
+  width: 98rem;
+  height: 5rem;
+}
+.dataBoard table td {
+  background-color: #8f8f8f;
+  color: black;
+  text-align: center;
+  width: 90rem;
+}
+.dataBoard table td #complet {
+  background-color: #8f8f8f;
+  color: darkgreen;
+}
+.dataBoard table td #incomplet {
+  background-color: #8f8f8f;
+  color: darkred;
+}/*# sourceMappingURL=DataSearchStyles.css.map */
