@@ -1,3 +1,40 @@
-button{
-    font-size: 2rem;
+$tableColor: #e7cfb4;
+$textColor: black;
+
+.controller {
+    margin-left: 54rem;
+    border-left: .2rem solid;
+    border-bottom: .2rem solid;
+    border-right: .2rem solid;
+    border-color: $tableColor;
+    margin-bottom: 1.2rem;
+
+
+    button {
+        background-color: #ffc18c;
+        color: #181c23;
+        font-size: 2rem;
+        cursor: pointer;
+        width: fit-content;
+        height: 3rem;
+        border: .1rem outset $tableColor;
+        transition: .5 all ease-in-out;
+    }
+
+    button:hover{
+        color: #fff;
+    }
+
+    button.active{
+        background-color: $tableColor;
+        color: #fff;
+        border-top: none;
+        border-bottom-left-radius: 1.2rem;
+    }
+
+}
+@media screen and (max-width: 1440px) {
+    .controller {
+        margin-left: 9.2rem;
+    }   
 }

@@ -1,13 +1,5 @@
-.container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
 * {
   font-family: "Roboto", sans-serif;
-  background-color: #181c23;
   color: #fffbf0;
 }
 
@@ -18,36 +10,59 @@
 body {
   display: flex;
   justify-content: center;
+  background-color: #181c23;
   font-size: 1.8rem;
 }
 body #root {
   width: 90%;
-  background-color: #fffbf0;
+  border-radius: 1.2rem;
+  background-color: #29303a;
   display: flex;
   justify-content: center;
 }
-
-.content {
+body #root .content {
   width: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
 }
-.content .header {
-  width: 100%;
-  background-color: #fffbf0;
-}
-.content .main {
+body #root .content .header {
   width: 100%;
 }
-.content .footer {
+body #root .content .main {
   width: 100%;
-  background-color: #fffbf0;
+  border-radius: 1.2rem;
 }
-.content .line {
+body #root .content .footer {
+  width: 100%;
+}
+body #root .content .line {
   height: 2rem;
   width: 100%;
-  background-color: #fffbf0;
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    margin: 0;
+  }
+  body #root {
+    width: 100%;
+  }
+  body #root .content {
+    width: 90%;
+  }
+  body #root .content .header {
+    width: 100%;
+  }
+  body #root .content .main {
+    width: 100%;
+  }
+  body #root .content .footer {
+    width: 100%;
+  }
+  body #root .content .line {
+    height: 2rem;
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -26,29 +26,26 @@ export default function DataSearch() {
 
     return (
         <div className="dataBoard">
-            <h3>Buscando Dados</h3>
             <table id="tableTask" >
-                <table>
-                    <thead>
-                        <th>Number</th>
-                        <th>Description</th>
-                        <th>Status</th>
-                    </thead>
-                    {currentPosts.map((task) => {
-                        return (
-                            <tbody key={task.id}>
-                                <td>{task.id}</td>
-                                <td>{task.title}</td>
-                                <td>
-                                    {
-                                        task.completed ? <span id="complet">Tarefa Completa</span> :
-                                            <span id="incomplet">Tarefa Incompleta</span>
-                                    }
-                                </td>
-                            </tbody>
-                        )
-                    })}
-                </table>
+                <thead>
+                    <th>Number</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                </thead>
+                {currentPosts.map((task) => {
+                    return (
+                        <tbody key={task.id}>
+                            <td>{task.id}</td>
+                            <td>{task.title}</td>
+                            <td>
+                                {
+                                    task.completed ? <span id="complet">Tarefa Completa <i className="fa-solid fa-check"></i></span> :
+                                        <span id="incomplet">Tarefa Incompleta <i className="fa-solid fa-clock"></i></span>
+                                }
+                            </td>
+                        </tbody>
+                    )
+                })}
             </table>
             <Pagination
                 totalPosts={tasks.length}

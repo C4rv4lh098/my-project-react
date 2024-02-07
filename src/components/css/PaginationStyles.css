@@ -1,3 +1,34 @@
-button {
+.controller {
+  margin-left: 54rem;
+  border-left: 0.2rem solid;
+  border-bottom: 0.2rem solid;
+  border-right: 0.2rem solid;
+  border-color: #e7cfb4;
+  margin-bottom: 1.2rem;
+}
+.controller button {
+  background-color: #ffc18c;
+  color: #181c23;
   font-size: 2rem;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 3rem;
+  border: 0.1rem outset #e7cfb4;
+  transition: 0.5 all ease-in-out;
+}
+.controller button:hover {
+  color: #fff;
+}
+.controller button.active {
+  background-color: #e7cfb4;
+  color: #fff;
+  border-top: none;
+  border-bottom-left-radius: 1.2rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .controller {
+    margin-left: 9.2rem;
+  }
 }/*# sourceMappingURL=PaginationStyles.css.map */

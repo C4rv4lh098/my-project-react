@@ -14,6 +14,7 @@ function App() {
       </div>
       <div className="line"></div>
       <div className="footer">
+      <div className="line"></div>
         <Footer />
       </div>
     </div>

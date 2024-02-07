@@ -1,1 +1,1 @@
-{"version":3,"sources":["PaginationStyles.scss","PaginationStyles.css"],"names":[],"mappings":"AAAA;EACI,eAAA;ACCJ","file":"PaginationStyles.css"}
+{"version":3,"sources":["PaginationStyles.scss","PaginationStyles.css"],"names":[],"mappings":"AAGA;EACI,kBAAA;EACA,yBAAA;EACA,2BAAA;EACA,0BAAA;EACA,qBARS;EAST,qBAAA;ACFJ;ADKI;EACI,yBAAA;EACA,cAAA;EACA,eAAA;EACA,eAAA;EACA,uBAAA;EAAA,kBAAA;EACA,YAAA;EACA,6BAAA;EACA,+BAAA;ACHR;ADMI;EACI,WAAA;ACJR;ADOI;EACI,yBA5BK;EA6BL,WAAA;EACA,gBAAA;EACA,iCAAA;ACLR;;ADSA;EACI;IACI,mBAAA;ECNN;AACF","file":"PaginationStyles.css"}

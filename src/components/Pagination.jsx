@@ -8,7 +8,7 @@ const Pagination = ({ totalPosts, postsPerPage, setCurrentPage, currentPage }) =
     }
 
     return (
-        <div>
+        <div className="controller">
             {pages.map((page, index) => {
                 return (
                     <button key={index} onClick={() => setCurrentPage(page)} className={page == currentPage ? 'active' : ''}>
